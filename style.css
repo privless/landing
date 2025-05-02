@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 85vh;
 }
 
 .hero-content {
@@ -50,21 +50,21 @@ body {
 }
 
 .text h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     color: white;
 }
 
 .text p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #DDD;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .cta-buttons img {
-    height: 50px;
-    margin-right: 1rem;
+    height: 60px;
+    margin-right: 1.5rem;
     cursor: pointer;
 }
 
@@ -76,6 +76,6 @@ body {
 }
 
 .mockup img {
-    max-width: 320px;
+    max-width: 400px;
     width: 100%;
 }
