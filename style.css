@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0F0F11;
+    color: #A18BFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin: 2rem auto;
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+p {
+    color: #CCC;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #00FFE1;
+    color: #0F0F11;
+    padding: 1rem 2rem;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature h2 {
+    color: #00FFE1;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #555;
+}
