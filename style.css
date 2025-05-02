@@ -1,135 +1,117 @@
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #1B1235 0%, #2C235B 100%);
-    color: white;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e1445, #281c6c);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Navbar */
 .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.2rem 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
 }
 
 .logo {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.nav-links {
-    display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
+/* Hero Section */
 .hero {
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .text {
-    flex: 1;
-    min-width: 300px;
+  max-width: 600px;
 }
 
 .text h1 {
-    font-size: 2.75rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .text p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #CCCCEE;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1.2rem;
-    flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #dcdcdc;
 }
 
 .cta-buttons img {
-    height: 60px;
-    cursor: pointer;
-}
-
-.mockup {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
+  height: 50px;
+  margin-right: 15px;
 }
 
 .mockup img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
+  width: 300px;
+  height: auto;
 }
 
-/* Responsive layout for mobile */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 1rem 1rem 1.5rem;
-    }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .logo {
-        font-size: 1.5rem;
-    }
+  .navbar nav {
+    margin-top: 10px;
+  }
 
-    .nav-links {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
+  .navbar nav a {
+    display: inline-block;
+    margin: 10px;
+  }
 
-    .nav-links a {
-        font-size: 0.95rem;
-    }
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  .mockup img {
+    width: 200px;
+    margin-bottom: 30px;
+  }
 
-    .text h1 {
-        font-size: 2.25rem;
-    }
+  .cta-buttons img {
+    height: 45px;
+    margin: 10px;
+  }
 
-    .mockup img {
-        max-width: 280px;
-        margin-bottom: 1rem;
-    }
+  .text h1 {
+    font-size: 2rem;
+  }
 
-    .cta-buttons {
-        justify-content: center;
-    }
+  .text p {
+    font-size: 1rem;
+  }
 }
