@@ -21,6 +21,7 @@ body {
   padding: 25px 40px;
   font-weight: bold;
   font-size: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -30,6 +31,7 @@ body {
 .navbar nav {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar nav a {
@@ -83,10 +85,11 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .cta-buttons img {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 
@@ -99,7 +102,7 @@ body {
 /* Responsive Layout */
 @media (max-width: 900px) {
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     gap: 40px;
   }
@@ -124,23 +127,32 @@ body {
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .navbar nav {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 12px;
   }
 
   .text h1 {
     font-size: 2rem;
   }
 
+  .text p {
+    font-size: 1rem;
+  }
+
   .mockup img {
-    height: 400px;
+    height: 440px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
   }
 
   .cta-buttons img {
-    height: 50px;
+    height: 70px;
   }
 }
