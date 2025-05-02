@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
   margin: 0;
@@ -60,15 +61,16 @@ body {
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1300px;
   width: 100%;
   gap: 60px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .text {
   max-width: 500px;
+  flex: 1;
 }
 
 .text h1 {
@@ -83,19 +85,25 @@ body {
 
 .cta-buttons {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 20px;
 }
 
 .cta-buttons img {
-  height: 70px;
+  height: 90px;
   width: auto;
 }
 
 /* Mockup */
+.mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 .mockup img {
-  height: 620px;
+  height: 650px;
   width: auto;
 }
 
@@ -145,7 +153,7 @@ body {
   }
 
   .mockup img {
-    height: 440px;
+    height: 400px;
   }
 
   .cta-buttons {
@@ -153,6 +161,6 @@ body {
   }
 
   .cta-buttons img {
-    height: 70px;
+    height: 80px;
   }
 }
